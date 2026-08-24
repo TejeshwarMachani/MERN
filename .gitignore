@@ -40,3 +40,4 @@ coverage/
 *.log
 *.tgz
 .cache/
+__pycache__/
