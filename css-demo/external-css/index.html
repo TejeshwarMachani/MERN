@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>External CSS Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>External CSS Demo</h1>
+            <p class="subtitle">Styles loaded from a separate <code>.css</code> file</p>
+        </header>
+
+        <main>
+            <section class="card">
+                <h2>What is External CSS?</h2>
+                <p>External CSS is written in a separate file with a <code>.css</code> extension and linked to HTML using the <code><link></code> tag. This is the <span class="highlight">recommended approach</span> for production websites.</p>
+            </section>
+
+            <section class="card">
+                <h2>Linking the Stylesheet</h2>
+                <pre><code><head>
+    <link rel="stylesheet" href="styles.css">
+</head></code></pre>
+                <p>The <code>rel="stylesheet"</code> attribute tells the browser this is a stylesheet, and <code>href</code> points to the CSS file path.</p>
+            </section>
+
+            <section class="card">
+                <h2>Benefits of External CSS</h2>
+                <div class="benefits-grid">
+                    <div class="benefit">
+                        <span class="icon">🔄</span>
+                        <h3>Reusability</h3>
+                        <p>One CSS file styles multiple HTML pages</p>
+                    </div>
+                    <div class="benefit">
+                        <span class="icon">💾</span>
+                        <h3>Caching</h3>
+                        <p>Browser caches the CSS file for faster loads</p>
+                    </div>
+                    <div class="benefit">
+                        <span class="icon">🧹</span>
+                        <h3>Separation</h3>
+                        <p>Clean separation of content and presentation</p>
+                    </div>
+                    <div class="benefit">
+                        <span class="icon">👥</span>
+                        <h3>Team Workflow</h3>
+                        <p>Designers and developers work independently</p>
+                    </div>
+                    <div class="benefit">
+                        <span class="icon">📱</span>
+                        <h3>Responsive</h3>
+                        <p>Easy media queries for different devices</p>
+                    </div>
+                    <div class="benefit">
+                        <span class="icon">🔧</span>
+                        <h3>Maintainability</h3>
+                        <p>Change one file, update the entire site</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card demo-section">
+                <h2>External CSS in Action</h2>
+                <p>This entire page is styled by <code>styles.css</code> — check the file to see all the styles!</p>
+                <div class="demo-elements">
+                    <button class="btn btn-primary">Primary Button</button>
+                    <button class="btn btn-secondary">Secondary Button</button>
+                    <button class="btn btn-accent">Accent Button</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>External CSS — Best Practice for Production Websites</p>
+        </footer>
+    </div>
+</body>
+</html>
